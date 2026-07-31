@@ -1,0 +1,75 @@
+---
+title: "Features backlog"
+description: "Track requested, planned, active, and shipped features."
+sidebarTitle: "Features backlog"
+icon: "list-checks"
+mode: "wide"
+public: true
+---
+
+Use this board to track feature work from request through delivery. Ask AI to add
+a feature, change its priority or owner, move it to another status, or record its
+completion.
+
+<Info>
+  This is a static board stored in Git. AI updates the MDX file, then Mintlify
+  publishes the change after it reaches `main`.
+</Info>
+
+{/* AI MAINTENANCE CONTRACT
+- Keep exactly four statuses: Backlog, Planned, In progress, and Shipped.
+- Assign each feature one stable ID in the form FTR-###.
+- Never reuse an ID or duplicate a card when its status changes.
+- Keep cards ordered by priority (High, Medium, Low), then by ID.
+- Every active card must include Priority, Owner, and Next step.
+- Every shipped card must include Owner, Completed, and Outcome.
+- Update the visible "Last updated" date whenever this board changes.
+- Replace a "No items" card when adding the first feature to a status.
+- Restore a "No items" card when removing the last feature from a status.
+*/}
+
+**Last updated:** July 31, 2026
+
+<Columns cols={4}>
+  <Column>
+
+  ## Backlog
+
+  <Card title="No items" icon="inbox">
+    New feature requests appear here before planning.
+  </Card>
+
+  </Column>
+  <Column>
+
+  ## Planned
+
+  <Card title="No items" icon="calendar-clock">
+    Prioritized features appear here when they are ready to schedule.
+  </Card>
+
+  </Column>
+  <Column>
+
+  ## In progress
+
+  <Card title="No items" icon="loader-circle">
+    Active feature work appears here.
+  </Card>
+
+  </Column>
+  <Column>
+
+  ## Shipped
+
+  <Card title="FTR-001 · Add a static features Kanban" icon="circle-check" color="#16A34A">
+    **Owner:** AI-assisted docs
+
+    **Completed:** July 31, 2026
+
+    **Outcome:** Added a responsive backlog board with stable feature IDs and
+    maintenance rules for future AI updates.
+  </Card>
+
+  </Column>
+</Columns>

@@ -16,6 +16,13 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "Roadmap",
+        "public": true,
+        "pages": [
+          "features-backlog"
+        ]
       }
     ],
     "global": {
